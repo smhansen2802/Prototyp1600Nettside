@@ -1,0 +1,325 @@
+/* CSS Reset for body and html */
+html, body {
+    margin: 0;           /* Remove default margin */
+    padding: 0;          /* Remove default padding */
+    height: 100%;        /* Ensure the body takes full height */
+    width: 100%;         /* Ensure the body takes full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background-color: #000000;
+}
+
+/* Optional: To apply box-sizing to all elements */
+* {
+    box-sizing: inherit; /* Inherit from html */
+}
+
+
+/*________________________________________________________________*/
+
+/*Header Main*/
+.frontHeader {
+    display: flex;                 /* Enable flexbox for the header */
+    flex-direction: column;        /* Stack elements vertically (column layout) */
+    justify-content: center;       /* Center content vertically (for extra padding, etc.) */
+    align-items: center;           /* Center content horizontally */
+    padding: 10px;                 /* Add padding around the header */
+    background-color: #000000;     /* Optional: Add a light background color */
+}
+
+/* Style for the image in the header */
+header figure {
+    margin: 0;                     /* Remove default figure margin */
+}
+
+header img {
+    size: 200px;
+    margin-bottom: 6px;           /* Add space between the image and the headings */
+}
+
+/* Heading styles */
+header h1 {
+    font-size: 50px;               /* Size of the main heading */
+    margin-bottom: 5px;            /* Add a little space below the h1 */
+    text-align: center;            /* Center text */
+    color: #ff7300;
+}
+
+header h2 {
+    font-size: 33px;               /* Size of the subheading */
+    color: #ff7300;                   /* Optional: A slightly darker color for the subheading */
+    text-align: center;            /* Center text */
+}
+
+
+/*_________________________________________________________________________*/
+
+/*Boksene på mainPage*/
+.containerMain{
+    justify-content: space-around;
+    padding: 20px;
+}
+.boxMain {
+    text-decoration: none;   /* Remove the underline from links */
+    display: block;          /* Make the whole box clickable */
+    width: 500px;            /* Set width of each box */
+    height: 100px;           /* Set height of each box */
+    background-color: #f200ff; /* background */
+    color: white;            /* White text color */
+    border-radius: 10px;     /* Rounded corners */
+    text-align: center;      /* Center text in the box */
+    padding: 20px;           /* Padding inside the box */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    margin: 10px;
+}
+.boxMain h2{
+    font-size: 24px;
+    align-items: center;
+    color: black;
+}
+
+.frontMain {
+    display: flex;                      /* Enable Flexbox on the main section */
+    align-items: center;                /* Center content vertically */
+    justify-content: center;
+    min-height: 80vh;                   /* Ensure the main section takes up space on the page */
+    padding: 20px;                      /* Add padding around the content */
+    background-image: url(../images/Basketbane.jpg);
+    width: 100%;                     /* Sett bredde til 100% */
+    height: 100vh;                    /* Sett høyde til 100vh */
+    background-size: cover;           /* Sørg for at bildet dekker hele elementet */
+    background-position: center;      /* Sentrer bildet */
+    background-repeat: no-repeat;     /* Ikke gjenta bildet */
+    border-color: white;
+    border-style: solid;
+}
+
+
+
+/*________________________________________________________*/
+
+/* Footer styling */
+footer {
+    display: flex;                       /* Enable Flexbox for the footer */
+    justify-content: center;             /* Center articles horizontally */
+    align-items: flex-start;             /* Align items to the top of the footer */
+    flex-wrap: wrap;                     /* Allow wrapping on smaller screens */
+    padding: 20px;                       /* Add padding around the footer */
+    background-color: #5c5c5c;        /* Background color for footer */
+    color: rgb(251, 251, 251);        /* Text color for footer */
+}
+
+/* Article styling */
+footer article {
+    margin: 0 20px;                     /* Add space between articles */
+    text-align: left;                  /* Center text in each article */
+}
+
+/* List styling */
+footer ul {
+    list-style-type: none;               /* Remove default list styling */
+    padding: 0;                          /* Remove default padding */
+    margin: 0;                           /* Remove default margin */
+}
+
+footer li {
+    margin-bottom: 10px;                 /* Add space between list items */
+}
+
+/*____________________________________________________________*/
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.valuesHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000; /* Blue background for the header */
+    color: white;              /* White text color */
+    text-align: center;         /* Center text */
+}
+
+/* Logo styling */
+.valuesHeader figure {
+    margin-bottom: 10px; /* Space between the logo and the heading */
+}
+
+.valuesHeader img {
+    max-width: 150px;     /* Set a reasonable size for the logo */
+    height: auto;
+}
+
+/* Heading styling */
+.valuesHeader h1 {
+    margin-bottom: 20px;  /* Space between the heading and the navigation */
+    font-size: 2em;
+}
+
+/* Navigation styling */
+nav ul {
+    display: flex;
+    list-style-type: none;   /* Remove bullets from list */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;          /* Add space between the menu items */
+}
+
+nav ul li a {
+    color: white;            /* White text for links */
+    text-decoration: none;   /* Remove underline from links */
+    font-size: 1.2em;
+}
+
+/* Add hover effect on links */
+nav ul li a:hover {
+    text-decoration: underline; /* Underline the link on hover */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .valuesHeader h1 {
+        font-size: 1.5em;     /* Make heading smaller on small screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+
+    nav ul li {
+        margin-bottom: 10px;   /* Add space between vertical menu items */
+    }
+}
+
+/*____________________________________________________________________________*/
+
+/*Values Main*/
+
+/* Center the main content */
+.valuesMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255); /* White background for the main content */
+    max-width: 800px; /* Set a max-width to control how wide the content can be */
+    margin: 50px auto; /* Center the main content horizontally with auto margins */
+    padding: 20px;
+    border-radius: 10px; /* Slight rounding of the corners */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Add some shadow for a subtle 3D effect */
+}
+
+/* Image styling */
+.valuesMain figure {
+    margin-bottom: 20px; /* Space between the image and the text */
+}
+
+.valuesMain img {
+    max-width: 100%; /* Image takes up full width of the container, but doesn't overflow */
+    height: auto; /* Maintain the aspect ratio of the image */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* Article text styling */
+.valuesMain article h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.valuesMain article p {
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improves readability */
+    text-align: justify; /* Justifies the paragraph text */
+}
+
+/* Styling for the aside */
+.valuesMain aside {
+    margin-top: 20px;
+    font-style: italic;
+    background-color: #f1f1f1; /* Light grey background for emphasis */
+    padding: 10px;
+    border-left: 5px solid #ff7300; /* Blue border for styling */
+    border-radius: 5px;
+}
+
+
+/*About us Main*/
+
+main.aboutUsMain {
+    background-color: white; /* White background for the main content */
+    width: 80%; /* Take 80% of the screen width */
+    max-width: 800px; /* Ensure it doesn’t exceed 800px */
+    padding: 20px;
+    margin: 20px auto; /* Auto margin for centering */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main.aboutUsMain figure {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the image */
+    margin-bottom: 20px;
+}
+
+main.aboutUsMain img {
+    max-width: 100%;
+    border-radius: 10px;
+    border-color: #000000;
+    border: solid;
+}
+
+article h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: black;
+}
+
+article p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+/*Product main*/
+
+main.productMain {
+    background-color: white; /* White background for the main content */
+    width: 80%; /* Take up 80% of the screen width */
+    max-width: 800px; /* Ensure the content doesn't exceed 800px */
+    padding: 20px;
+    margin: 20px auto; /* Center main section horizontally */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+    text-align: center; /* Center text inside the main */
+}
+
+main.productMain h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: black;
+}
+
+main.productMain p {
+    text-align: justify; /* Justify text for better readability */
+    line-height: 1.6; /* Increase line height for readability */
+    margin-bottom: 20px;
+    color: black;
+}
